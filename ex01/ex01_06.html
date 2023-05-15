@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.naver.com" method="post" name="login_form">
+        <table border="1">
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="u_name" placeholder="이름을 입력하세요"/></td>
+            </tr>
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="u_id"/></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" name="u_pw"/></td>
+            </tr>
+            <tr>
+                <td>나이</td>
+                <td><input type="number" name="u_age"/></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td>
+                    <input type="radio" name="u_gender" value="M" checked="checked"/>남성
+                    <input type="radio" name="u_gender" value="W"/>여성
+                    <input type="radio" name="u_gender" value="etc"/>기타
+                </td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input type="email" name="u_mail"/></td>
+            </tr>
+            <tr>
+                <td>연락처</td>
+                <td><input type="text" name="u_phone"></td>
+            </tr>
+            <tr>
+                <td>고향</td>
+                <td>
+                    <!-- selected가 디폴트 -->
+                    <select name="u_hometown" id="">
+                        <option value="">--- 선택 ---</option>
+                        <option value="S">서울</option>
+                        <option value="B">부산</option>
+                        <option value="C">충청도</option>
+                        <option value="J">전라도</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>취미</td>
+                <td>
+                    <!-- value는 숫자로 가장 많이 나타냄, 만국공통어, 숫자는 유니크함 -->
+                    <input type="checkbox" name="u_hobby" value="축구">축구 &nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="u_hobby" value="농구">농구 &nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="u_hobby" value="야구">야구 &nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="u_hobby" value="배구">배구 &nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="u_hobby" value="탁구">탁구
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <!-- 초기화란 ?  -->
+                   <button name="" value="create account">Submit</button>
+                   <button name="" value="reset">reset</button>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <label for="color">Enter a Color: </label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <label for="cheese">Amount of Cheese: </label>
+            <!-- value = 시작값, step = 이동 범위  -->
+            <input type="range" id="cheese" min="1" max="100" value="75" step="7" name="cheese">
+        </p>
+        <p>
+            <label for="date">Date</label>
+            <input type="date" id="date">
+        </p>
+        <p>
+            <label for="time">Time</label>
+            <input type="time" id="time">
+        </p>
+        <p>
+            <label for="datetime-local">datetime-local</label>
+            <input type="datetime-local" id="datetime-local">
+        </p>
+    </form>
+</body>
+</html>

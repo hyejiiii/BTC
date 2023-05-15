@@ -1,0 +1,97 @@
+/* 선택자 {속성: 속성값;} */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: coral;
+}
+
+/* 자식 태그를 하위에 놔둠 */
+/* p {
+    color: white;
+    background-color: darksalmon;
+} */
+
+div {
+    font-style: italic;
+}
+
+div.bold {
+    font-weight: bold;
+}
+
+p.bold {
+    font-weight: bold;
+}
+
+/* id는 유니크하기 때문에 이름만 쓰는게 더 좋음 */
+/* #wrap {
+    width: 50px;
+} */
+
+input {
+    background-color: aliceblue;
+}
+
+input[type='password'] {
+    background-color: red;
+}
+
+/* value 속성 이용해도 됨 
+input[value='submit']{}
+*/
+input[type='button']{
+    font-weight: bold;
+}
+
+/* 문자열 속성 선택자 */
+img[src $= png] {
+    border: 10px solid #00ff00;
+}
+
+img[src *= photo-1683588775595-07585fdaa097] {
+    border: 5px solid #0000ff;
+}
+
+#wrap {
+    color: antiquewhite;
+}
+/* 후손 선택자 */
+#wrap div p {
+    color: greenyellow;
+}
+
+/* 자손 선택자 */
+#wrap > p {
+    font-weight: bold;
+}
+
+#wrap > div > div > div > p {
+    background-color: aquamarine;
+}
+
+/* 동위 선택자 */
+.p1 ~ p {
+    color: violet;
+}
+
+/* .p1 + p {
+    color: tomato;
+} */
+/* 윗 코드보다 이렇게 명시적으로 쓰는게 더 좋음 */
+p.p2 {
+    color: tomato;
+}
+
+/* a 태그의 기본적인 언더라인 사라짐 */
+a {
+    text-decoration: none;
+}
+
+/* a 태그 위에 마우스 올렸을 때 언더라인 쳐짐 */
+a:hover {
+    text-decoration: underline;
+}
+
+input:focus {
+    background-color: red;
+}
