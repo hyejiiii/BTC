@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+/* li:nth-child(2n+1) {
+    color: aquamarine;
+} */
+
+p::first-letter {
+    color: red;
+    font-size: 2em;
+}
+
+div.txt {
+    width: 500px;
+    border: 1px solid #ff0000;
+}
+
+div.txt::selection {
+    background-color: yellowgreen;
+}
+
+ul > li:not(.lorem) {
+    color: bisque;
+}
