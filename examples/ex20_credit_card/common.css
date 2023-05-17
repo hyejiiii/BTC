@@ -1,0 +1,26 @@
+* {
+    /* 외부 여백 */
+    margin: 0;
+    /* 내부 여백 */
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    /* 내용이 넘치면 가림 */
+    overflow: hidden;
+}
+
+li {
+    /* 리스트 항목 점 없애기 */
+    list-style: none;
+    float: left;
+}

@@ -1,0 +1,152 @@
+#root {
+    width: 640px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+#root > div.top_img {
+    height: 427px;
+}
+
+#root > div.nav_wrap > ul > li:nth-child(1) {
+    background-color: #ff0000;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+#root > div.nav_wrap > ul > li:nth-child(1) > a > img {
+    min-width: 40px;
+    max-width: 40px;
+    margin-top: 20px;
+}
+
+#root > div.nav_wrap > ul > li:nth-child(2) {
+    width: 130px;
+    height: 80px;
+    text-align: center;
+}
+
+/* a 태그 버튼처럼 만들어주기 */
+#root > div.nav_wrap > ul > li:nth-child(2) > a {
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 100px;
+    border-radius: 50px;
+    font-size: 2.5em;
+    margin-top: 8px;
+    padding-bottom: 8px;
+}
+
+#root > div.nav_wrap > ul > li:nth-child(2) > a:hover {
+    text-decoration: none;
+}
+
+#root > div.nav_wrap > ul > li:nth-child(3),
+#root > div.nav_wrap > ul > li:nth-child(4),
+#root > div.nav_wrap > ul > li:nth-child(5),
+#root > div.nav_wrap > ul > li:nth-child(6) {
+    float: right;
+    font-weight: bold;
+    width: 50px;
+    height: 80px;
+    line-height: 80px;
+    text-align: right;
+}
+
+/* 카테고리 영역 구분선 */
+#root > div.category_wrap {
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+
+/* 카테고리 아이템 크기 지정과 꾸미기 */
+#root > div.category_wrap > ul > li:nth-child(1) {
+    width: 130px;
+}
+
+#root > div.category_wrap > ul > li:nth-child(2) {
+    width: 120px;
+}
+
+#root > div.category_wrap > ul > li:nth-child(3) {
+    width: 80px;
+}
+
+#root > div.category_wrap > ul > li:nth-child(4) {
+    width: 100px;
+}
+
+#root > div.category_wrap > ul > li:nth-child(5) {
+    width: 100px;
+}
+
+#root > div.category_wrap > ul > li {
+    margin: 10px;
+    padding: 10px 0;
+    border: 1px solid #dadada;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+#root > div.category_wrap > ul > li > a:hover {
+    text-decoration: none;
+}
+
+/* 상품 리스트 위, 아래와 구분하기 위해 margin 적용 */
+#root > div.product_wrap {
+    margin: 80px 0;
+}
+
+/* 상품 리스트들끼리 여백 생기게 함 */
+#root > div.product_wrap ul {
+    margin: 80px 0;
+}
+
+/* 주문 항목 리스트 꾸미기 */
+#root > div.order_wrap > ul > li {
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+}
+
+#root > div.order_wrap > ul > li:nth-child(1) {
+    width: 160px;
+}
+
+#root > div.order_wrap > ul > li:nth-child(2) {
+    width: 180px;
+}
+
+#root > div.order_wrap > ul > li > span {
+    /* node 구조 */
+    /* <li>주문수량: <span>2</span>개<li> */
+    /* li의 자식은 3개 -> 주문수량: / 2 / 개 */
+    font-weight: bold;
+    color: red;
+}
+
+#root > div.order_wrap > ul > li:nth-child(3) {
+    float: right;
+    width: 130px;
+    background-color: red;
+}
+
+#root > div.order_wrap > ul > li:nth-child(3) a {
+    color: white;
+    font-weight: bold;
+}
+
+#root > div.order_wrap > ul > li:nth-child(3) a:hover {
+    text-decoration: none;
+}
+
+#root > div.order_wrap > ul > li:nth-child(4) {
+    width: 130px;
+    float: right;
+}
+
+#root > div.order_wrap > ul > li:nth-child(4) a:hover {
+    text-decoration: none;
+}

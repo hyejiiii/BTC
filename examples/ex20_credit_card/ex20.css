@@ -1,0 +1,68 @@
+#wrap {
+    width: 500px;
+    margin: 20px auto;
+}
+
+/* 카드 배경 만들기 */
+#wrap div.card {
+    width: 400px;
+    /* 중앙정렬 */
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #dadada;
+    border-radius: 15px;
+    background-color: #60564d;
+}
+
+/* 상단 카드 회사 정보 관련 css */
+#wrap div.card div.card_office {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 3px;
+}
+
+/* 카드 이름 정보 관련 */
+#wrap div.card div.card_name {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* ic칩 관련 */
+#wrap div.card div.ic_wrap {
+    margin-bottom: 40px;
+}
+
+/* ic칩 특수문자 */
+#wrap div.card div.ic_wrap li:nth-child(1) {
+    width: 30px;
+    height: 60px;
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 1.3em;
+}
+
+/* ic칩 이미지 */
+#wrap div.card div.ic_wrap li:nth-child(2) img {
+    min-width: 70px;
+    max-width: 70px;
+}
+
+/* 카드 사용자 관련 정보 css */
+#wrap div.card div.user {
+    margin-bottom: 5px;
+}
+
+/* 사용자 이름 */
+#wrap div.card div.user li:nth-child(1) {
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 1.2em;   
+}
+
+/* 카드 회사 로고 */
+#wrap div.card div.user li:nth-child(2) img {
+    min-width: 100px;
+    max-width: 100px;
+}

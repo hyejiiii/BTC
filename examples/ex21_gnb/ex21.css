@@ -1,0 +1,29 @@
+#wrap {
+    height: 50px;
+    line-height: 50px;
+}
+
+/* 네비게이션바 크기 & 중앙정렬 & 하단 선 관련 */
+#wrap > ul {
+    width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid #dadada;
+}
+
+/* li 리스트 오른쪽으로 눕게 만들고 텍스트 중앙정렬 */
+#wrap > ul > li {
+    width: 130px;
+    float: right;
+    text-align: center;
+}
+
+/* 가상 선택자로 꾸며주기 */
+#wrap > ul > li > a:hover {
+    color: #525252;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#wrap > ul > li:hover {
+    background-color: #f2f2f2;
+}

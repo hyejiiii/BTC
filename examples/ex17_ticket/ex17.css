@@ -1,0 +1,104 @@
+#wrap {
+    width: 1090px;
+    margin: 20px auto;
+}
+
+#wrap li.ticket_wrap {
+    width: 840px;
+
+}
+
+#wrap li.ticket_wrap div.top {
+    width: 820px;
+    height: 60px;
+    line-height: 60px;
+    background-color: red;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 2em;
+}
+
+#wrap li.ticket_wrap div.body {
+    border-right: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+
+#wrap li.ticket_wrap table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#wrap li.ticket_wrap table td {
+    /* border: 1px solid #dadada; */
+    padding: 10px;
+}
+
+#wrap li.boarding_wrap {
+    width: 250px;
+}
+
+/* border-collapse : 테이블 또는 셀의 테두리선 표시방법 지정 속성 */
+/* collapse : 서로 이웃하는 테이블이나 셀의 테두리선 겹침 */
+/* separate : 기본값으로 서로 이웃하는 테이블이나 셀 테두리선 분리 */
+#wrap li.boarding_wrap table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#wrap li.boarding_wrap table td {
+    /* border: 1px solid #dadada; */
+    padding: 10px;
+    padding-bottom: 2px;
+}
+
+#wrap li.boarding_wrap div.top {
+    width: 230px;
+    height: 60px;
+    line-height: 60px;
+    background-color: red;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 1.3em;
+}
+
+#wrap li.boarding_wrap div.body {
+    border-right: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+
+#wrap li.boarding_wrap div.body img {
+    min-width: 210px;
+    max-width: 210px;
+}
+#wrap li.boarding_wrap div.body .bar_img {
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+/* 글자관련 */
+.info {
+    font-size: 0.9em;
+    color: #858585;
+}
+
+.warning {
+    color: #e91a22;
+    font-size: 0.9em;
+}
+
+.big {
+    color: #4d4d4d;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.u_info {
+    color: #4d4d4d;
+    font-weight: bold;
+}

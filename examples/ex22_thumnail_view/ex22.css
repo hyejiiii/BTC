@@ -1,0 +1,32 @@
+/* 갤러리 감싸는 전체 크기 설정 */
+#wrap {
+    width: 800px;
+    margin: 20px auto;
+}
+
+/* 5개의 열을 가진 행에 적용하는 CSS */
+#wrap div.thum_01 {
+    width: 735px;
+    margin: 0 auto;
+}
+
+/* 행의 각각의 아이템에 적용될 CSS */
+#wrap div.thum_01 ul li {
+    /* 한 아이템당 적용되는 크기와 정렬, 여백 */
+    width: 107px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* 3개의 열을 가진 행에 적용하는 CSS */
+#wrap div.thum_02 {
+    width: 735px;
+    margin: 0 auto;
+}
+
+#wrap div.thum_02 ul li {
+    /* 한 아이템당 적용되는 크기와 정렬, 여백 */
+    width: 205px;
+    text-align: center;
+    margin: 20px;
+}

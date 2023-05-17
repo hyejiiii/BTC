@@ -1,0 +1,33 @@
+#wrap {
+    width: 240px;
+    margin: 20px auto;
+}
+
+#wrap > ul > li {
+    margin: 5px 0;
+}
+
+#wrap ul.private {
+    overflow: hidden;
+}
+
+#wrap ul.private li {
+    float: left;
+}
+
+#wrap ul.private li:nth-child(1) {
+    width: 50px;
+    margin-right: 20px;
+}
+
+#wrap ul.private li:nth-child(1) img {
+    min-width: 50px;
+    max-width: 50px;
+    border-radius: 50px;
+}
+
+#wrap ul.private li:nth-child(2) {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px dashed #dadada;
+}

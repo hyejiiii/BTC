@@ -1,0 +1,39 @@
+#wrap {
+    width: 240px;
+    /* 가운데 정렬 위해 */
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 0.9em;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px rgba(100, 100, 100, 0.2);
+}
+
+#wrap div.name {
+    margin-bottom: 50px;
+}
+
+#wrap div.position {
+    margin-bottom: 20px;
+}
+
+#wrap div.mail {
+    margin-bottom: 40px;
+}
+
+#wrap div.address {
+    margin-bottom: 40px;
+}
+
+#wrap div.office {
+    margin-bottom: 10px;
+}
+
+#wrap div span.bold {
+    font-weight: bold;
+}
+
+#wrap div span.italic {
+    font-style: italic;
+}
+
