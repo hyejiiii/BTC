@@ -1,0 +1,109 @@
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 최상단 네비게이션 관련 CSS */
+#wrap div.gnb {
+    width: 1200px;
+    height: 50px;
+    /* 행간 조정 */
+    line-height: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: black;
+}
+
+/* 네비게이션 아이템들 크기 지정 & 양옆 공백 */
+#wrap div.gnb li {
+    width: 140;
+    margin: 0 37px;
+}
+
+/* 네비게이션 아이템 폰트 관련 */
+#wrap div.gnb li a {
+    color: white;
+    font-weight: bold;
+}
+
+/* 뉴스 div 관련 CSS */
+#wrap div.news_wrap {
+    width: 1200px;
+    margin: 0 auto 30px;
+}
+
+/* 뉴스 아이템들 크기 지정과 꾸미기 */
+#wrap div.news_wrap li {
+    width: 370px;
+    margin-right: 45px;
+    border: 1px solid #dadada;
+    border-bottom: 3px solid #3f506e;
+    /* 박스 크기 어떤 것 기준으로 계산할지 정하는 속성 */
+    /* border-box : 테두리를 기준으로 크기 정함 */
+    /* content-box(기본값) : 콘텐트 영역을 기준으로 정함 */
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* 마지막 아이템 오른쪽 margin 없애기 */
+#wrap div.news_wrap li:last-child {
+    margin-right: 0;
+}
+
+/* 아이템 속 div 크기 지정하고 가운데 정렬 */
+#wrap div.news_wrap li div {
+    width: 300px;
+    margin: 20px auto;
+}
+
+/* 아이템 속 div들 ui 지정 */
+#wrap div.news_wrap li div.title {
+    height: 130px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#wrap div.news_wrap li div.text {
+    height: 92px;
+}
+
+#wrap div.news_wrap li div.thum img {
+    height: 131px;
+}
+
+#wrap div.news_wrap li div.a_link {
+    height: 30px;
+    line-height: 30px;
+}
+
+#wrap div.news_wrap li div.a_link a {
+    color: #285094;
+    font-size: 1.1em;
+}
+
+/* 클라우드 div 관련 CSS */
+#wrap div.cloud {
+    width: 1200px;
+    margin: 0 auto 30px;
+}
+
+#wrap div.cloud p {
+    margin-bottom: 20px;
+}
+
+#wrap div.cloud div {
+    background-color: #e7e3df;
+    border-radius: 3px;
+    padding: 10;
+}
+
+#wrap div.cloud div ul li {
+    width: 153px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #242424;
+    margin: 20px;
+    text-align: center;
+    border-radius: 3px;
+}
