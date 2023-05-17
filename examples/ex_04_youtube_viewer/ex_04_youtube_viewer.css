@@ -1,0 +1,118 @@
+#wrap {
+    width: 1280px;
+    margin: 0 auto 50px;
+}
+
+/* 제목 css 적용 */
+#wrap div.title {
+    height: 50px;
+    /* 행간 */
+    line-height: 50px;
+    font-weight: bold;
+    /* 디폴트보다 조금 더 크게 */
+    font-size: 1.1em;
+}
+
+#wrap div.infos li.author{
+    /* 공간 확보 */
+    margin-right: 15px;
+}
+
+#wrap div.infos li.author img {
+    min-width: 40px;
+    max-width: 40px;
+    /* 원으로 만들기 */
+    border-radius: 40px;
+}
+
+#wrap div.infos li.author_name {
+    margin-right: 30px;
+}
+
+/* 채널명 */
+#wrap div.infos li.author_name div:nth-child(1) {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* 구독자수 */
+#wrap div.infos li.author_name div:nth-child(2) {
+    font-size: 0.8em;
+    color: rgba(150, 150, 150, 1.0);
+}
+
+#wrap div.infos li.subscribe a {
+    display: inline-block;
+    width: 60px; height: 34px;
+    /* 중앙 정렬 위해 */
+    line-height: 34px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 3px;
+    border-radius: 20px;
+}
+
+/* 같은 속성 적용할 때 배열로 가능 */
+/* 인터프리터로 인해 순서바뀜 */
+#wrap div.infos li.good,
+#wrap div.infos li.bad,
+#wrap div.infos li.share,
+#wrap div.infos li.save,
+#wrap div.infos li.more {
+    float: right;
+}
+
+#wrap div.infos li.good a,
+#wrap div.infos li.bad a,
+#wrap div.infos li.share a,
+#wrap div.infos li.save a,
+#wrap div.infos li.more a {
+    display: inline-block;
+    padding: 5px 20px;
+    margin-top: 5px;
+    margin-left: 7px;
+    background-color: rgba(150, 150, 150, 0.1);
+    border-radius: 20px;
+    font-size: 0.85em;
+}
+
+#wrap div.infos li.good a:hover,
+#wrap div.infos li.bad a:hover,
+#wrap div.infos li.share a:hover,
+#wrap div.infos li.save a:hover,
+#wrap div.infos li.more a:hover {
+    text-decoration: underline;
+}
+
+#wrap div.views {
+    padding: 10px;
+    background-color: rgba(150, 150, 150, 0.1);
+    border-radius: 5px;
+}
+
+#wrap div.views div {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+#wrap div.comment > div:nth-child(1) {
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+#wrap div.comment > div:nth-child(2) li img {
+    min-width: 40px;
+    max-width: 40px;
+    border-radius: 40px;
+}
+
+#wrap div.comment > div:nth-child(2) li input {
+    margin-left: 15px;
+    width: 1200px;
+    padding: 10px;
+    /* 인터프리터가 해석할 때 일단 border를 다 없애고 필요한 border을 만들어줌 */
+    border: 0;
+    border-bottom: 1px solid #dadada;
+}

@@ -1,0 +1,106 @@
+/* 전체적인 틀  */
+#wrap {
+    /* 브라우저 크기에 상관없이 문서 width 고정 */
+    width: 1200px;
+    /* 외부 여백 margin */
+    /* top부터 시계방향으로 */
+    /* 반복되는거만 적으면 알아서 반복됨 */
+    /* 0은 단위 안 적어도 되지만 0을 넘으면 단위 적어줘야함 */
+    margin: 50px auto;
+}
+
+/* 자손 선택 */
+#wrap > ul > li {
+    /* common에서 ul hidden 적용했으니 여기서는 안해도 됨 */
+    float: left;
+}
+
+/* 편지 list - li 중 class가 list인 요소만 바꾸기 */
+#wrap > ul > li.list {
+    width: 300px;
+}
+
+#wrap > ul > li.list > ul {
+    width: 270px;
+    /* padding 적용해서 총 290px */
+    padding: 10px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+}
+
+#wrap > ul > li.list > ul > li {
+    padding: 7px;
+    height: 20px;
+    /* 폰트마다 정해진 행간이 있음 */
+    /* 20px 안에서 행간을 똑같이 20px을 줘서 중앙정렬됨 */
+    line-height: 20px;
+}
+
+#wrap > ul > li.list > ul > li:hover {
+    background-color: rgba(200, 200, 200, 0.2);
+}
+
+#wrap > ul > li.list > ul > li > a {
+    text-decoration: none;
+}
+
+/* 편지 내용 - li 중 class가 letter인 요소만 바꾸기 */
+#wrap > ul > li.letter {
+    width: 900px;
+}
+
+#wrap > ul > li.letter > div.letter_wrap {
+    padding: 20px 30px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+}
+
+/* 자손 선택으로 받는 이 css 적용 */
+#wrap > ul > li.letter div.to {
+    /* 내부 여백 */
+    margin-bottom: 50px;
+    /* 폰트 스타일 지정 */
+    font-style: italic;
+}
+
+#wrap div.to:hover {
+    text-decoration: underline;
+}
+
+/* 제목 */
+#wrap > ul > li.letter div.title {
+    width: 90%;
+    /* 텍스트 정렬 */
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto 20px;
+    /* margin에서 적용하거나 따로 명시 가능 */
+    /* margin-bottom: 20px; */
+    padding-bottom: 10px;
+    /* 1px 기본, 생략가능 */
+    border-bottom: double #dadada;
+}
+
+/* 내용 */
+#wrap > ul > li.letter div.body {
+    /* title과 간격 맞춤 */
+    width: 90%;
+    margin: 30px auto;
+}
+
+/* div body의 후손 선택자 p */
+#wrap > ul > li.letter div.body p {
+    margin: 20px 0;
+}
+
+/* 보낸 이 */
+#wrap > ul > li.letter div.from {
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+    margin-top: 50px;
+}
+
+#wrap > ul > li.letter div.from:hover {
+    text-decoration: underline;
+}

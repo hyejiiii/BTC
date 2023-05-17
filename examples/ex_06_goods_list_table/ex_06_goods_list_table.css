@@ -1,0 +1,25 @@
+#wrap {
+    width: 370px;
+    margin: 10px auto;
+}
+
+#wrap .item tr td {
+    padding: 12px 4px;
+}
+
+#wrap .item tr td div.thum img {
+    min-width: 107px;
+    max-width: 107px;
+}
+
+#wrap .item tr td div.infos p:nth-child(1) {
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+#wrap .item tr td div.infos p:nth-child(2) {
+    text-align: center;
+    font-size: 0.9em;
+}
+

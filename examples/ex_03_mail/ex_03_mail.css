@@ -1,0 +1,119 @@
+/* 전체적인 틀 */
+#wrap {
+    /* 브라우저 크기에 상관없이 문서 width 고정 */
+    width: 1100px;
+    /* 외부 여백 margin */
+    /* top부터 시계방향으로 */
+    /* 반복되는거만 적으면 알아서 반복됨 */
+    /* 0은 단위 안 적어도 되지만 0을 넘으면 단위 적어줘야함 */
+    margin: 0 auto;
+}
+
+/* 상단 메뉴 네비게이션 */
+#wrap div.menu_wrap {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+
+/* menu_wrap 중 input 태그 */
+#wrap div.menu_wrap input {
+    /* 옆의 a 태그와 간격 넓히기 */
+    margin-left: 5px;
+}
+
+/* menu_wrap 중 a 태그 */
+#wrap div.menu_wrap a {
+    /* <div> - dusplay : block */
+    /* <span> - display : inline -> inline 요소는 margin 적용 힘들다(왼쪽 오른쪽은 됨) */
+    /* 밑으로 떨어지지 않고 옆으로 나열될 수 있음 */
+    display: inline-block;
+    /* block 타입으로 바꿨기 때문에 제약사항에서 자유로워짐 */
+    padding: 3px 10px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    /* font-size 1이 기본값 */
+    /* 원래 크기에 비해 0.2만큼 축소됨 */
+    font-size: 0.8em; 
+}
+
+/* 체크박스와 읽음의 간격 넓히고 싶을 때, 어떻게 nth-child 적용? */
+/* 체크박스가 1이 되기 때문에 읽음 a 태그는 2 */
+#wrap div.menu_wrap a:nth-child(2) {
+    margin-left: 15px;
+}
+
+/* 반응 선택자 적용 */
+#wrap div.menu_wrap a:hover {
+    text-decoration: none;
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+/* 메일 테이블 */
+#wrap div.list_wrap table {
+    width: 100%;
+    font-size: 0.9em;
+    /* 테이블에 디폴트로 있는 여백 공간 날리기 */
+    border-collapse: collapse;
+}
+
+#wrap div.list_wrap table tr {
+    border-top: 1px solid #dadada;
+    /* border-bottom: 1px solid #dadada; */
+}
+
+/* 따로 적용해도 됨 */
+#wrap div.list_wrap table tr:last-child {
+    border-bottom: 1px solid #dadada;
+}
+
+#wrap div.list_wrap table tr:hover {
+    background-color: rgba(200, 200, 200, 0.2);
+}
+
+#wrap div.list_wrap table tr td {
+    padding: 7px 0;
+}
+
+#wrap div.list_wrap table tr td img {
+    /* 중앙배치 위해 적용 */
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+/* 여러개 선택 */
+#wrap div.list_wrap table tr td:nth-child(1),
+#wrap div.list_wrap table tr td:nth-child(2),
+#wrap div.list_wrap table tr td:nth-child(3) {
+    width: 30px;
+}
+
+/* 따로 더 추가해도 됨 */
+#wrap div.list_wrap table tr td:nth-child(1) {
+    padding-left: 5px;
+}
+
+#wrap div.list_wrap table tr td:nth-child(4) {
+    width: 200px;
+}
+
+/* 1, 2, 3, 4, 6의 사이즈 우리가 정하면 5는 알아서 계산해줌 */
+/* 보통 제일 중요한 내용을 생략 */
+#wrap div.list_wrap table tr td:nth-child(6) {
+    width: 150px;
+}
+
+/* 페이지 버튼 이미지 */
+#wrap div.page {
+    text-align: center;
+}
+
+/* 버튼처럼 꾸미기 */
+#wrap div.page a {
+    margin-top: 20px;
+    display: inline-block;
+    width: 50px; height: 50px;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+}

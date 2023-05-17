@@ -1,0 +1,69 @@
+/* 전체적인 틀  */
+#wrap {
+    /* 브라우저 크기에 상관없이 문서 width 고정 */
+    width: 800px;
+    /* 외부 여백 margin */
+    /* top부터 시계방향으로 */
+    /* 반복되는거만 적으면 알아서 반복됨 */
+    /* 0은 단위 안 적어도 되지만 0을 넘으면 단위 적어줘야함 */
+    margin: 50px auto;
+    /* 두께, 선 스타일, 색상 */
+    border: 1px solid #dadada;
+    /* border-radius 모서리 둥글게 */
+    border-radius: 10px;
+    /* 내부 여백 padding */
+    /* 여백으로 크기를 확장시킴 = 총 902px 됨 */
+    padding: 80px 50px;
+    /* 옆으로 얼마나 떨어질지, 아래로 얼마나 떨어질지, 블러, 색상 */
+    box-shadow: 3px 3px 3px rgba(200, 200, 200, 0.5);
+}
+
+/* 받는 이 */
+#wrap div.to {
+    /* 내부 여백 */
+    margin-bottom: 50px;
+    /* 폰트 스타일 지정 */
+    font-style: italic;
+}
+
+#wrap div.to:hover {
+    text-decoration: underline;
+}
+
+/* 제목 */
+#wrap div.title {
+    width: 90%;
+    /* 텍스트 정렬 */
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto 20px;
+    /* margin에서 적용하거나 따로 명시 가능 */
+    /* margin-bottom: 20px; */
+    padding-bottom: 10px;
+    /* 1px 기본, 생략가능 */
+    border-bottom: double #dadada;
+}
+
+/* 내용 */
+#wrap div.body {
+    /* title과 간격 맞춤 */
+    width: 90%;
+    margin: 30px auto;
+}
+
+/* div body의 후손 선택자 p */
+#wrap div.body p {
+    margin: 20px 0;
+}
+
+/* 보낸 이 */
+#wrap div.from {
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+    margin-top: 50px;
+}
+
+#wrap div.from:hover {
+    text-decoration: underline;
+}
