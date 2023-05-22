@@ -1,0 +1,46 @@
+#wrap {
+    width: 400px;
+    margin: 10px auto;
+}
+
+#wrap>.grid-container {
+    display: grid;
+
+    grid-template-areas:
+        "line1 line1 line1 line1"
+        "line2 line2 line2 line2"
+        "line3 line3 line3 line3"
+        "line4 line4 line4 line4"
+        "line5 line5 line5 line5"
+        "line6 line6 line6 line6"
+    ;
+
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.line1,
+.line2,
+.line3,
+.line4,
+.line5,
+.line6 {
+    width: 94%;
+    height: 60px;
+    line-height: 60px;
+    margin: 3px auto;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px rgba(125, 125, 125, 0.3);
+}
+
+div.bg_grey {
+    background-color: rgba(245, 245, 245, 1.0);
+}
+
+div.bg_blue {
+    background-color: rgba(0, 9, 158, 1.0);
+    color: white;
+}

@@ -1,0 +1,57 @@
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top ul {
+    width: 1200px;
+    padding-left: 150px;
+}
+
+.top ul li {
+    width: 1200px;
+    padding: 30px auto;
+}
+
+.title {
+    padding-top: 50px;
+}
+
+.title span {
+    font-weight: bold;
+    font-size: 3em;
+    margin-left: 5px;
+}
+
+.text {
+    margin-bottom: 50px;
+}
+
+.text span {
+    font-size: 1.6em;
+}
+
+.photo_wrap {
+    width: 400px;
+    background-color: aquamarine;
+}
+
+.photo_wrap img {
+    margin: 15px;
+    border: 0px solid #dadada;
+    border-radius: 5px;
+    position: relative;
+    left: -150px;
+}
+
+.photo_wrap .pw_text {
+    width: 220px;
+}
+
+.photo_wrap span {
+    /* font-size: 0.8em; */
+}
+
+.s_bold span {
+    font-weight: bold;
+}
