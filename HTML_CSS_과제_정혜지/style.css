@@ -1,0 +1,198 @@
+#wrap {
+    width: 830px;
+    margin: 0 auto;
+}
+
+#wrap div.main_title {
+    width: 830px;
+}
+
+#wrap div.card {
+    width: 830px;
+    text-align: center;
+}
+
+#wrap div.sub_ad {
+    width: 830px;
+    margin: 50px auto;
+}
+
+#wrap div.sub_ad ul li.first_ad {
+    padding-right: 150px;
+}
+
+#wrap div.sub_ad ul li.ad_thum img {
+    min-width: 200px;
+    max-width: 200px;
+    height: 200px;
+    /* 사진 안깨지는 속성 */
+    object-fit: cover;
+    /* object-position: 50%; */
+    border: 0 solid #dadada;
+    border-radius: 150px;
+    margin-right: 10px;
+}
+
+#wrap div.sub_ad ul li.ad_text_wrap {
+    padding-top: 50px;
+}
+
+#wrap div.sub_ad ul li div.ad_brand_name a {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#wrap div.list_title {
+    width: 830px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-top: 2px dotted #dadada;
+    border-bottom: 2px dotted #dadada;
+}
+
+#wrap div.list2_title {
+    width: 830px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-top: 2px dotted #dadada;
+    border-bottom: 2px dotted #dadada;
+    margin-bottom: 30px;
+}
+
+#wrap div.list2_title span {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+/* 이거를 빼먹었었음... */
+#wrap div.list_title span {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#wrap div.list {
+    width: 830px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#wrap div.list .adList_title a {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#wrap div.list .brand a {
+    font-size: 1.2em;
+    color: #c5c5c5;
+}
+
+#wrap div.list .benefit a {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#wrap div.list ul.list1 li:nth-child(1) {
+    margin-right: 10px;
+}
+
+#wrap div.list .list1 {
+    padding-bottom: 30px;
+}
+
+#wrap div.list ul.list2 {
+    padding-bottom: 20px;
+}
+
+#wrap div.list ul.list2 li:nth-child(1), 
+#wrap div.list ul.list2 li:nth-child(2) {
+    padding-right: 3px;
+}
+
+#wrap div.list .adList_title2 a {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#wrap div.list .brand2 a {
+    color: #c5c5c5;
+}
+
+#wrap div.list .benefit2 a {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #636363;
+}
+
+#wrap div.list ul.list3 {
+    padding-bottom: 50px;
+}
+
+#wrap div.list ul.list3 li:nth-child(1), 
+#wrap div.list ul.list3 li:nth-child(2) {
+    padding-right: 3px;
+}
+
+/* list2 */
+#wrap div.list2 {
+    width: 830px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#wrap div.list2 .adList_title a {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#wrap div.list2 .brand a {
+    font-size: 1.2em;
+    color: #c5c5c5;
+}
+
+#wrap div.list2 .benefit a {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#wrap div.list2 ul.list1 li:nth-child(1) {
+    margin-right: 10px;
+}
+
+#wrap div.list2 .list1 {
+    padding-bottom: 30px;
+}
+
+#wrap div.list2 ul.list2 {
+    padding-bottom: 20px;
+}
+
+#wrap div.list2 ul.list2 li:nth-child(1), 
+#wrap div.list2 ul.list2 li:nth-child(2) {
+    padding-right: 3px;
+}
+
+#wrap div.list2 .adList_title2 a {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#wrap div.list2 .brand2 a {
+    color: #c5c5c5;
+}
+
+#wrap div.list2 .benefit2 a {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #636363;
+}
+
+#wrap div.list2 ul.list3 {
+    padding-bottom: 50px;
+}
+
+#wrap div.list2 ul.list3 li:nth-child(1), 
+#wrap div.list2 ul.list3 li:nth-child(2) {
+    padding-right: 3px;
+}
